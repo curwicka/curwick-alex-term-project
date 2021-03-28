@@ -1,0 +1,138 @@
+/* Import font family */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+/* index.css - Stylesheet for Alex Curwick's term project
+   Alexander Curwick
+   Written: March 21, 2021
+   Revised:
+
+  Color Scheme:
+  #12232E  Dark Blue: Dark Background
+  #007CC7  Lighter Blue: Accent Background
+  #4DA8DA  Lightest Blue: Highlight, Accent Text
+  #203647  Shadow of Dark Blue: Dark Text
+  #EEFBFB  Shadow of Light Blue: Light Text, Background
+*/
+
+body {
+  font-family: sans-serif;
+  color: #203647;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #EEFBFB;
+  height: 100%;
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Anton', sans-serif;
+  color: #EEFBFB;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 15px;
+  color: #EEFBFB;
+  margin-top: 0px;
+}
+
+header {
+  background-color: #12232E;
+  margin-top: -35px;
+  padding: 15px;
+}
+
+footer {
+  position: absolute;
+  background-color: #12232E;
+  padding: 15px;
+  color: #EEFBFB;
+  width: 100%;
+  bottom: 0;
+}
+
+.registrationForm {
+  font-family: 'Open Sans Condensed', arial, sans-serif;
+  width: 500px;
+  padding: 30px;
+  background-color: #EEFBFB;
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.registrationForm h2 {
+  background-color: #12232E;
+  text-transform: uppercase;
+  color: #EEFBFB;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px;
+  margin: -30px -30px 30px -30px;
+}
+
+.registrationForm input {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #203647;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 45px;
+}
+
+.registrationForm input[type="button"],
+.registrationForm input[type="submit"] {
+  -moz-box-shadow: inset 0px 1px 0px 0px #4DA8DA;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #4DA8DA;
+  box-shadow: inset 0px 1px 0px 0px #4DA8DA;
+  background-color: #007CC7;
+  border: 1px solid #007CC7;
+  display: inline-block;
+  cursor: pointer;
+  color: #EEFBFB;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.image-slide {
+  height: 480px;
+  width: 720px;
+  margin: auto;
+}
+
+.slide-arrow {
+  color: #007CC7;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+}
+
+.slide-arrow.right {
+  right: 1rem;
+}
+
+.slide-arrow.left {
+  left: 1rem;
+}
+
+.carousel {
+  width: 720px;
+  height: 480px;
+  margin: auto;
+  position: relative;
+}
