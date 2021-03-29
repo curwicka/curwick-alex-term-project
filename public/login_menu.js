@@ -5,7 +5,12 @@ const e = React.createElement;
 class LoginMenu extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { liked: false };
+
+    this.state = { expanded: false };
+  }
+
+  expandLogin () {
+
   }
 
   render() {

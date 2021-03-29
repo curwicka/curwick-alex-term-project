@@ -136,3 +136,7 @@ footer {
   margin: auto;
   position: relative;
 }
+
+.login_button {
+  float: right;
+}

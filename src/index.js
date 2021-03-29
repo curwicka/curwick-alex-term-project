@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
 
-{/* Common page components */}
+/* Common page components */
 class Page extends React.Component {
   constructor(props) {
     super(props);
@@ -11,14 +11,25 @@ class Page extends React.Component {
   render() {
     return(
       <React.Fragment>
+        <header>
+          <h1>Milk Crate</h1>
+          <h3>Buy, Sell, and Share Your Record Collection <LoginForm /></h3>
+        </header>
         <Carousel />
+        <footer>
+          <p>
+            &copy; 2021, MilkCrate:
+            <br />
+            Web Master: <a href="mailto:curwicka@csp.edu">Alexander Curwick</a>
+          </p>
+        </footer>
       </React.Fragment>
     );
   }
 }
 
-{/* Login/Register Components */}
-{/*
+/* Login/Register Components */
+/*
 class RegistrationForm extends React.Component {
   constructor(props) {
     super(props);
@@ -41,8 +52,8 @@ class RegistrationForm extends React.Component {
     );
   }
 }
-*/}
-class LoginButton extends React.Component {
+*/
+/*class LoginButton extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -54,9 +65,54 @@ class LoginButton extends React.Component {
       </div>
     )
   }
+}*/
+
+class LoginForm extends React.Component {
+  constructor() {
+    super();
+
+    this.state = { showLogin: false, };
+
+    this.showLogin = this.showLogin.bind(this);
+  }
+
+  showLogin(event) {
+    event.preventDefault();
+
+    this.setState({ showLogin: true, });
+  }
+
+  render() {
+    return (
+      <div className="login_button">
+        <button onClick={this.showLogin}>
+          Login/Register
+        </button>
+
+        {this.state.showLogin ? (
+          <div className="loginForm" ref={(element) => {
+            this.dropdownMenu = element;
+          }}>
+            <h2>Login</h2>
+            <form>
+              <input type='text' id='uname' name='uname' placeholder='Username' /><br />
+              <input type='password' id='password' name='password' placeholder='Password' /><br />
+              <input type='button' value='Login' />
+            </form>
+          </div>
+        ) : (null)}
+      </div>
+    );
+  }
 }
 
-{/* Image Carousel Components */}
+/*const LoginButton = ({ clickFunction }) => (
+	<div className={ login_button } onClick={ clickFunction }>
+		<input type='button' value='Login/Register' />
+	</div>
+);*/
+
+/* Image Carousel Components */
 class Carousel extends React.Component {
 	constructor (props) {
 		super(props);
