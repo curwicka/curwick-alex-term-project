@@ -79,7 +79,7 @@ class LoginForm extends React.Component {
   showLogin(event) {
     event.preventDefault();
 
-    this.setState({ showLogin: true, });
+    this.setState(prevState => ({ showLogin: !prevState.showLogin }));
   }
 
   render() {
@@ -97,7 +97,9 @@ class LoginForm extends React.Component {
             <form>
               <input type='text' id='uname' name='uname' placeholder='Username' /><br />
               <input type='password' id='password' name='password' placeholder='Password' /><br />
-              <input type='button' value='Login' />
+              <button>
+                Login
+              </button>
             </form>
           </div>
         ) : (null)}
@@ -105,12 +107,6 @@ class LoginForm extends React.Component {
     );
   }
 }
-
-/*const LoginButton = ({ clickFunction }) => (
-	<div className={ login_button } onClick={ clickFunction }>
-		<input type='button' value='Login/Register' />
-	</div>
-);*/
 
 /* Image Carousel Components */
 class Carousel extends React.Component {

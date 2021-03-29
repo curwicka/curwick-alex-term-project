@@ -115,7 +115,7 @@ footer {
 }
 
 .slide-arrow {
-  color: #007CC7;
+  color: #EEFBFB;
   cursor: pointer;
   font-size: 2rem;
   position: absolute;
@@ -139,4 +139,43 @@ footer {
 
 .login_button {
   float: right;
+  width: 250px;
+}
+
+.loginForm {
+  font-family: 'Open Sans Condensed', arial, sans-serif;
+  width: 200px;
+  padding: 10px;
+  background-color: #EEFBFB;
+  margin: 5px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.loginForm h2 {
+  background-color: #12232E;
+  text-transform: uppercase;
+  color: #EEFBFB;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 10px;
+  margin: -20px -30px 30px -30px;
+  width: 200px;
+}
+
+.loginForm input {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 3px;
+  border: none;
+  border-bottom: 1px solid #203647;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px Arial, Helvetica, sans-serif;
+  /*height: 45px;*/
 }
